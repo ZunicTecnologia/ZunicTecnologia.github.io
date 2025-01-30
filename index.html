@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZunicTecnologia - Soluciones Digitales</title>
+    <link rel="shortcut icon" href="fotos/icono.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="fotos/icono.png" alt="ZunicTecnologia Icon">
+                <img src="fotos/logo2.PNG" alt="ZunicTecnologia Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text animate-fadeInUp">
+                <h1>Transformamos Ideas en Realidad Digital</h1>
+                <p>Te ayudo a crear sitios web atractivos, funcionales y fáciles de gestionar, sin necesidad de bases de datos. Ya sea una página informativa, un portafolio o una landing page, me enfoco en ofrecer soluciones ligeras, rápidas y optimizadas para que tu contenido brille sin complicaciones. Si buscas algo sencillo, limpio y eficiente, puedo ayudarte a hacer realidad tu proyecto web de manera ágil y con un diseño único.</p>
+                <a href="#contacto" class="cta-button">Comienza tu Proyecto</a>
+            </div>
+            <div class="hero-image animate-fadeInUp">
+                <img src="fotos/logo.PNG" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card animate-fadeInUp">
+                <i class="fas fa-code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Creamos sitios web responsivos y optimizados para brindar la mejor experiencia a tus usuarios.</p>
+            </div>
+            <div class="service-card animate-fadeInUp">
+                <i class="fas fa-globe"></i>
+                <h3>Página Propia</h3>
+                <p>Desarrollamos tu página web personalizada con dominio propio y hosting incluido.</p>
+            </div>
+            <div class="service-card animate-fadeInUp">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Muestra para Clientes</h3>
+                <p>Creamos una vista previa de tu sitio web para que puedas evaluar el diseño antes de su lanzamiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="proyectos">
+        <h2 class="section-title">Nuestro Trabajo</h2>
+        <div class="video-wrapper">
+            <div class="video-container">
+                <video id="mainVideo" controls>
+                    <source src="Video explicativo.mp4" type="video/mp4" id="videoSource">
+                    <source src="videosexp.mp4" type="video/mp4" id="videoSource">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="video-controls">
+                <div class="quality-selector">
+                    <span>Calidad:</span>
+                    <button class="quality-btn active" data-quality="360">360p</button>
+                    <button class="quality-btn" data-quality="720">720p</button>
+                </div>
+                <div class="video-status">
+                    <span id="currentQuality">Calidad actual: 360p</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Presentación de ZunicTecnologia</h3>
+                <p class="video-description">Descubre cómo transformamos ideas en soluciones digitales innovadoras. Este video muestra nuestro proceso de trabajo y algunos de nuestros proyectos más destacados.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ZunicTecnologia. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-fadeInUp');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            animateElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'all 0.6s ease-out';
+                observer.observe(element);
+            });
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+            } else {
+                header.style.backgroundColor = 'white';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Video Quality Control
+        const videoQualities = {
+            '360': 'video-360p.mp4',
+            '720': 'video-720p.mp4',
+        };
+
+        const qualityButtons = document.querySelectorAll('.quality-btn');
+        const videoElement = document.getElementById('mainVideo');
+        const videoSource = document.getElementById('videoSource');
+        const currentQualitySpan = document.getElementById('currentQuality');
+        let currentTime = 0;
+
+        qualityButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const quality = this.dataset.quality;
+                const videoUrl = videoQualities[quality];
+                
+                // Guardar el tiempo actual
+                currentTime = videoElement.currentTime;
+                
+                // Actualizar la fuente del video
+                videoSource.src = videoUrl;
+                videoElement.load();
+                
+                // Restaurar el tiempo de reproducción
+                videoElement.addEventListener('loadedmetadata', function() {
+                    videoElement.currentTime = currentTime;
+                    if (!videoElement.paused) videoElement.play();
+                }, { once: true });
+
+                // Actualizar botones y estado
+                qualityButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                currentQualitySpan.textContent = `Calidad actual: ${quality}p`;
+            });
+        });
+
+        // Mostrar loader mientras el video carga
+        videoElement.addEventListener('waiting', function() {
+            // Aquí podrías añadir un indicador de carga
+            this.classList.add('loading');
+        });
+
+        videoElement.addEventListener('playing', function() {
+            // Remover el indicador de carga
+            this.classList.remove('loading');
+        });
+
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
