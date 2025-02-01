@@ -86,6 +86,59 @@
         </div>
     </section>
 
+    <section class="projects-web" id="proyectos-web">
+        <h2 class="section-title">Proyectos Web</h2>
+        <div class="projects-grid">
+            <!-- Proyecto Música -->
+            <div class="project-card animate-fadeInUp" onclick="window.open('proyecto-musica.html', '_blank')">
+                <div class="project-image" style="background-image: url('fotos/musica-bg.jpg')">
+                    <i class="fas fa-music project-icon"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Proyecto Música</h3>
+                    <p class="project-description">Plataforma interactiva para amantes de la música</p>
+                    <a href="proyecto-musica.html" class="project-link" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Proyecto Juego -->
+            <div class="project-card animate-fadeInUp" onclick="window.open('proyecto-juego.html', '_blank')">
+                <div class="project-image" style="background-image: url('fotos/juego-bg.jpg')">
+                    <i class="fas fa-gamepad project-icon"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Proyecto Juego</h3>
+                    <p class="project-description">Experiencia gaming inmersiva y divertida</p>
+                    <a href="proyecto-juego.html" class="project-link" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Proyecto Blog -->
+            <div class="project-card animate-fadeInUp" onclick="window.open('proyecto-blog.html', '_blank')">
+                <div class="project-image" style="background-image: url('fotos/blog-bg.jpg')">
+                    <i class="fas fa-blog project-icon"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Proyecto Blog</h3>
+                    <p class="project-description">Espacio digital para compartir ideas</p>
+                    <a href="proyecto-blog.html" class="project-link" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Proyecto Lectura -->
+            <div class="project-card animate-fadeInUp" onclick="window.open('proyecto-lectura.html', '_blank')">
+                <div class="project-image" style="background-image: url('fotos/lectura-bg.jpg')">
+                    <i class="fas fa-book-reader project-icon"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Proyecto Lectura</h3>
+                    <p class="project-description">Biblioteca digital interactiva</p>
+                    <a href="proyecto-lectura.html" class="project-link" target="_blank">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 ZunicTecnologia. Todos los derechos reservados.</p>
         <div class="social-links">
@@ -185,6 +238,20 @@
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
+                });
+            });
+        });
+        // New Animation for Project Cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
                 });
             });
         });
