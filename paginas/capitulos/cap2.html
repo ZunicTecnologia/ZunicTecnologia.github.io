@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Shumii con Piel de Lobo - Capítulo 1</title>
+    <style>
+    :root {
+        --bg-day: #f9f7f5;
+        --text-day: #2c3e50;
+        --bg-night: #121212;
+        --text-night: #e0e0e0;
+        --accent-day: #34495e;
+        --accent-night: #3498db;
+        --max-width: 800px;
+        --sidebar-width: 250px;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    body {
+        font-family: 'Merriweather', Georgia, serif;
+        line-height: 1.7;
+        background-color: var(--bg-day);
+        color: var(--text-day);
+        padding: 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+        background-color: var(--bg-night);
+        color: var(--text-night);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: var(--max-width);
+        width: 100%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            flex-direction: row;
+            max-width: calc(var(--max-width) + var(--sidebar-width) + 40px);
+            gap: 40px;
+        }
+    }
+
+    .content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+        transition: background-color 0.3s, box-shadow 0.3s;
+        width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+        .content {
+            max-width: var(--max-width);
+            padding: 40px;
+        }
+    }
+
+    body.dark-mode .content {
+        background-color: #1e1e1e;
+        box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+    }
+
+    .sidebar {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 12px;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    @media (min-width: 1024px) {
+        .sidebar {
+            width: var(--sidebar-width);
+            position: sticky;
+            top: 40px;
+            align-self: flex-start;
+        }
+    }
+
+    body.dark-mode .sidebar {
+        background-color: #2a2a2a;
+    }
+
+    /* Dark mode toggle styles */
+    .mode-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        border-radius: 30px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        cursor: pointer;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+
+    .mode-toggle-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .mode-toggle-text {
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+    body.dark-mode .mode-toggle {
+        background-color: #2c3e50;
+    }
+
+    body.dark-mode .mode-toggle-icon {
+        transform: rotate(180deg);
+        filter: invert(1);
+    }
+
+    body.dark-mode .mode-toggle-text {
+        color: #e0e0e0;
+    }
+
+    /* Scroll to Top Button */
+    #scrollToTop {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 990;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    #scrollToTop:hover {
+        background-color: #2980b9;
+        transform: scale(1.1);
+    }
+
+    body.dark-mode #scrollToTop {
+        background-color: #2ecc71;
+    }
+
+    body.dark-mode #scrollToTop:hover {
+        background-color: #27ae60;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Navegación del Libro</h3>
+            <ul>
+                <li>Capítulo Anterior</li>
+                <li>Capítulo Siguiente</li>
+                <li>Índice</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Capítulo 1: Prólogo</h1>
+            <h2>FERNANDO: ENCUENTRO CON UN LOBO SOLITARIO</h2>
+            
+            <p>Fue simplemente otro día incoloro entre una miríada de días incoloros para Fernando mientras se encontraba en el salón de ceremonias del templo para lo que era la enésima ceremonia de bautismo que había ayudado a realizar. Una horda de niños plebeyos entró en el templo mirando aquí y allá de manera descortés. El bordado mayormente azul en su ropa le indicó que era la ceremonia del bautismo de verano. Los días pasaban sin sentido, y estaba bastante cansado por el exceso de trabajo, por lo que era bastante fácil perder la noción del tiempo que pasaba en su existencia sin sentido.</p>
+            
+            <p>Ocupó su lugar en la mesa e hizo su parte en el registro de medallas. Pinchazo. Prensa. Próximo. Un niño tras otro, con las manitas sucias. Hubo una pausa en lo que se suponía sería el final de la alineación, por lo que Ferdinand levantó la vista con un suspiro.</p>
+            
+            <p>Se encontró cara a cara con lo que parecía una Mestionora en miniatura.</p>
+            
+            <p>La chica que tenía delante era pequeña, con un brillante cabello azul medianoche que brillaba como un cielo nocturno estrellado y un adorno inusual para el cabello que parecía flores hechas de hilo que los plebeyos ricos habían estado usando últimamente. Su ropa era más elegante que la de un plebeyo, más al nivel de un comerciante rico o un noble laico acomodado. Sus ojos eran como lunas llenas de cera, y había una profundidad de algún tipo de emoción en ellos antes de que se volvieran ilegibles. Fernando sintió una sensación de... ¿incomodidad? Y curiosidad. ¿Qué había en esos ojos?</p>
+            
+            <div class="author-note">
+                <p>HOOOOLA A TODOS.</p>
+                <p>Primero que nada esta historia no es mía, está en Archives of our own, me la encontré mientras buscaba material nuevo de lectura y me encantó 😍😍.</p>
+                <a href="https://www.wattpad.com/1402007051-un-shumil-con-piel-de-lobo-capítulo-1-prólogo" class="translation-link">Apoyar a la Traductora Original</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mode-toggle" id="modeToggle">
+        <svg class="mode-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span class="mode-toggle-text">Cambiar Modo</span>
+    </div>
+
+    <button id="scrollToTop" title="Ir al Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        document.getElementById('modeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+
+            // Scroll to Top Button Logic
+            const scrollToTopButton = document.getElementById('scrollToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.style.display = 'flex';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+
+            scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
