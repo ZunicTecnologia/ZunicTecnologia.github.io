@@ -1,0 +1,202 @@
+/* Estilos base (ya los tienes) */
+:root {
+    --background-color: #f4f1de;
+    --text-color: #2c3e50;
+    --book-color: #8b4513;
+    --hover-color: #a0522d;
+    --page-shadow: rgba(0,0,0,0.2);
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Header responsive */
+header {
+    text-align: center;
+    border-bottom: 3px double var(--book-color);
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--book-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px var(--page-shadow);
+    transition: transform var(--transition-speed) ease;
+}
+
+header img:hover {
+    transform: scale(1.03);
+}
+
+/* Descripción responsive */
+.description {
+    background-color: rgba(255,255,255,0.7);
+    border-left: 5px solid var(--book-color);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.description h2 {
+    color: var(--book-color);
+    border-bottom: 2px solid var(--book-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Capítulos responsive */
+.chapters {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px var(--page-shadow);
+    padding: 40px;
+    transition: box-shadow var(--transition-speed) ease;
+}
+
+.chapters:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.chapters h2 {
+    text-align: center;
+    color: var(--book-color);
+    border-bottom: 3px double var(--book-color);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.chapters ol {
+    list-style: none;
+    counter-reset: chapter-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chapters li {
+    margin-bottom: 20px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.chapters li a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 20px;
+    background-color: #f9f5f0;
+    border-left: 6px solid var(--book-color);
+    border-radius: 8px;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.chapters li a::before {
+    content: counter(chapter-counter, decimal-leading-zero);
+    counter-increment: chapter-counter;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%) rotate(-90deg);
+    color: var(--book-color);
+    opacity: 0.3;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.chapters li a:hover {
+    transform: translateX(10px) rotateX(5deg);
+    background-color: #f0e6d2;
+    border-left-color: var(--hover-color);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.chapters li a:hover::before {
+    opacity: 0.7;
+}
+
+/* Footer responsive */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .description, .chapters {
+        padding: 20px;
+    }
+
+    .chapters ol {
+        gap: 15px;
+    }
+
+    .chapters li a {
+        padding: 15px;
+    }
+    header img {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px var(--page-shadow);
+        transition: transform var(--transition-speed) ease;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .description h2, .chapters h2 {
+        font-size: 1.5rem;
+    }
+
+    .chapters li a {
+        padding: 10px;
+    }
+}
