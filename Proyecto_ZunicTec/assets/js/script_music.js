@@ -12,20 +12,20 @@ const songList = document.querySelector('.song-list');
             song1: {
                 title: 'Emocionante Música Instrumental Piano',
                 artist: 'Mattia Cupelli',
-                cover: '../img/musica3.PNG',
-                audio: '../audio/Emocionante-Música-Instrumental-Piano.mp3'
+                cover: '../assets/img/musica3.PNG',
+                audio: '../assets/audio/Emocionante-Música-Instrumental-Piano.mp3'
             },
             song2: {
                 title: 'COBRA',
                 artist: 'TENTON',
-                cover: '../img/musica2.PNG',
-                audio: '../audio/COBRA.mp3'
+                cover: '../assets/img/musica2.PNG',
+                audio: '../assets/audio/COBRA.mp3'
             },
             song3: {
                 title: 'Calm Wind',
                 artist: 'Peder B. Helland',
-                cover: '../img/musica1.PNG',
-                audio: '../audio/Calm-Wind.mp3'
+                cover: '../assets/img/musica1.PNG',
+                audio: '../assets/audio/Calm-Wind.mp3'
             }
         };
 
