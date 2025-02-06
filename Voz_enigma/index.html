@@ -2,81 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Voz Enigma</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="icon" href="assets/img/icono.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="assets/img/logo_letra.png" alt="Logo Voz Enigma" class="logo">
-        </div>
-        <h1>Voz Enigma</h1>
-    </header>
-
     <div class="container">
-        <section class="about-section">
-            <h2>El Arte de la Narración</h2>
-            <div class="info-boxes">
-                <div class="info-box">
-                    <i class="fas fa-microphone-alt"></i>
-                    <h3>¿Quién soy?</h3>
-                    <p>Voz Enigma es un narrador profesional especializado en storytelling inmersivo. Con más de 10 años de experiencia en doblaje y locución.</p>
-                </div>
-                <div class="info-box">
-                    <i class="fas fa-theater-masks"></i>
-                    <h3>Mi Propuesta</h3>
-                    <p>Creo experiencias auditivas únicas combinando técnicas de actuación vocal con tecnología de última generación.</p>
-                </div>
-                <div class="info-box">
-                    <i class="fas fa-book-open"></i>
-                    <h3>Proyectos</h3>
-                    <p>Desde audiolibros hasta narrativa para videojuegos, cada proyecto es una nueva aventura sonora.</p>
-                </div>
-            </div>
-        </section>
+        <!-- Header -->
+        <header class="item header">
+            <img src="assets/img/logo.png" alt="Logo Voz Enigma" class="logo">
+            <h1>Voz Enigma</h1>
+        </header>
 
-        <section class="media-section">
-            <div class="media-box">
-                <h2>Último Podcast</h2>
+        <!-- Sidebar -->
+        <aside class="item sidebar">
+            <h2>¿Quién soy?</h2>
+            <p>
+                Soy un locutor profesional con más de 10 años de experiencia en el mundo de la voz en off, narración y doblaje. Mi voz ha sido parte de proyectos internacionales, comerciales, audiovisuales y más. ¡Conoce mi trabajo!
+            </p>
+        </aside>
+
+        <!-- Content -->
+        <main class="item content">
+            <h2>Mi Trabajo</h2>
+            <div class="media-container">
                 <audio controls>
-                    <source src="assets/audio/La-cumbia-Juntos-y-mezclados-Sixto-Ariel-SA.mp3" type="audio/mpeg">
+                    <source src="assets/audio/Cumbia_fju.mp3" type="audio/mpeg">
                     Tu navegador no soporta el elemento de audio.
                 </audio>
+                <video controls>
+                    <source src="assets/videos/Cumbia_fju.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
             </div>
-            
-            <div class="media-box">
-                <h2>Video Destacado</h2>
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/watch?v=IzDolDO2nrM&list=PLHJu5EIzGFnfmj_FPWF8KveLfq5AA5_e2&index=3" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
+        </main>
 
-        <section class="social-nav">
-            <h2>Conéctate conmigo</h2>
-            <div class="social-icons">
-                <a href="#" class="social-icon youtube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="#" class="social-icon instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@vozenigma?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon tiktok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="#" class="social-icon twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </section>
+        <!-- Footer -->
+        <footer class="item footer">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@vozenigma?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2023 Voz Enigma. Magia vocal en cada palabra.</p>
-    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
