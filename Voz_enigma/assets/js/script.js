@@ -1,32 +1,32 @@
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    // Animación al hacer scroll
-    const observerOptions = {
-        threshold: 0.1
-    };
+// Animación adicional para el contenido
+document.addEventListener("DOMContentLoaded", function () {
+    const content = document.querySelector(".content");
+    content.style.opacity = "0";
+    setTimeout(() => {
+        content.style.transition = "opacity 1.5s ease";
+        content.style.opacity = "1";
+    }, 500);
+});
+// Añadir toggle para menú en versión mobile (opcional)
+document.addEventListener("DOMContentLoaded", function () {
+    // Animación inicial
+    const content = document.querySelector(".content");
+    content.style.opacity = "0";
+    setTimeout(() => {
+        content.style.transition = "opacity 1.5s ease";
+        content.style.opacity = "1";
+    }, 500);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.info-box, .media-box').forEach(element => {
-        element.style.opacity = 0;
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'all 0.6s ease-out';
-        observer.observe(element);
-    });
-
-    // Efecto de sonido al interactuar (opcional)
-    const hoverSound = new Audio('assets/hover-sound.mp3');
+    // Opcional: Menú hamburguesa para versiones mobile
+    const header = document.querySelector('.header');
+    const menuIcon = document.createElement('div');
+    menuIcon.className = 'menu-icon';
+    menuIcon.innerHTML = '☰';
     
-    document.querySelectorAll('.social-icon').forEach(icon => {
-        icon.addEventListener('mouseenter', () => {
-            hoverSound.play();
+    if (window.innerWidth <= 768) {
+        header.prepend(menuIcon);
+        menuIcon.addEventListener('click', () => {
+            document.querySelector('.sidebar').classList.toggle('active');
         });
-    });
+    }
 });
