@@ -148,8 +148,8 @@ body {
 }
 
 .player-cover {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
     margin-bottom: 2rem;
     object-fit: cover;
@@ -243,8 +243,8 @@ audio::-webkit-media-controls-panel {
 
 @media (max-width: 768px) {
     .player-cover {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .player-title {
