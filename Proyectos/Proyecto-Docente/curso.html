@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - Proyecto Docente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                Proyecto Docente
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="curso.html" class="active">Curso</a>
+                <a href="documentacion.html">Documentación</a>
+                <a href="apoyo.html">Apoyo</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." id="searchInput">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="course-container">
+        <aside class="video-menu">
+            <h2>Contenido del Curso</h2>
+            
+            <div class="course-section">
+                <div class="section-header">
+                    <span>Primera Clase: Introducción</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="video-list">
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_1">
+                        <i class="fas fa-play-circle"></i>
+                        Bienvenida al Curso
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_2">
+                        <i class="fas fa-play-circle"></i>
+                        Objetivos y Metodología
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_3">
+                        <i class="fas fa-play-circle"></i>
+                        Recursos Necesarios
+                    </li>
+                </ul>
+            </div>
+
+            <div class="course-section">
+                <div class="section-header">
+                    <span>Segunda Clase: Fundamentos</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="video-list">
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_4">
+                        <i class="fas fa-play-circle"></i>
+                        Conceptos Básicos
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_5">
+                        <i class="fas fa-play-circle"></i>
+                        Ejercicios Prácticos
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_6">
+                        <i class="fas fa-play-circle"></i>
+                        Resolución de Problemas
+                    </li>
+                </ul>
+            </div>
+
+            <div class="course-section">
+                <div class="section-header">
+                    <span>Tercera Clase: Aplicación</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="video-list">
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_7">
+                        <i class="fas fa-play-circle"></i>
+                        Casos de Estudio
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_8">
+                        <i class="fas fa-play-circle"></i>
+                        Proyectos Guiados
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_9">
+                        <i class="fas fa-play-circle"></i>
+                        Evaluación Práctica
+                    </li>
+                </ul>
+            </div>
+
+            <div class="course-section">
+                <div class="section-header">
+                    <span>Cuarta Clase: Avanzado</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="video-list">
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_10">
+                        <i class="fas fa-play-circle"></i>
+                        Temas Especializados
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_11">
+                        <i class="fas fa-play-circle"></i>
+                        Proyecto Final
+                    </li>
+                    <li data-video="https://www.youtube.com/embed/VIDEO_ID_12">
+                        <i class="fas fa-play-circle"></i>
+                        Conclusiones
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="video-player">
+            <div class="video-container">
+                <iframe id="videoFrame" 
+                        src="https://www.youtube.com/embed/VIDEO_ID_1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <p class="video-source">Proyecto Docente - Plataforma Educativa Universitaria</p>
+                <div class="video-controls">
+                    <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+                    <button id="fullscreenBtn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> contacto@proyectodocente.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p class="copyright">© 2024 Proyecto Docente. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
