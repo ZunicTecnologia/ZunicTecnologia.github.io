@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamAccess - Acceso a Plataformas de Streaming</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Proyecto_streamAccess
+                    
+                </span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="#plans">Planes</a>
+                <a href="#support">Soporte</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Accede a tus series y películas favoritas al mejor precio</h1>
+            <p>Disfruta del mejor contenido premium sin complicaciones</p>
+            <a href="#plans" class="btn btn-primary">Ver Planes</a>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Nuestros Planes</h2>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Netflix</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                    </div>
+                    <div class="plan-price">$14.99<span>/mes</span></div>
+                    <ul class="plan-features">
+                        <li>✓ Acceso Premium</li>
+                        <li>✓ Soporte 24/7</li>
+                        <li>✓ Garantía de servicio</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openPaymentModal('Netflix', 14.99)">Obtener Acceso</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Disney+</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                    </div>
+                    <div class="plan-price">$9.99<span>/mes</span></div>
+                    <ul class="plan-features">
+                        <li>✓ Acceso Premium</li>
+                        <li>✓ Soporte 24/7</li>
+                        <li>✓ Garantía de servicio</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openPaymentModal('Disney+', 9.99)">Obtener Acceso</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>HBO Max</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                    </div>
+                    <div class="plan-price">$12.99<span>/mes</span></div>
+                    <ul class="plan-features">
+                        <li>✓ Acceso Premium</li>
+                        <li>✓ Soporte 24/7</li>
+                        <li>✓ Garantía de servicio</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openPaymentModal('HBO Max', 12.99)">Obtener Acceso</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Amazon Prime</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                    </div>
+                    <div class="plan-price">$8.99<span>/mes</span></div>
+                    <ul class="plan-features">
+                        <li>✓ Acceso Premium</li>
+                        <li>✓ Soporte 24/7</li>
+                        <li>✓ Garantía de servicio</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openPaymentModal('Amazon Prime', 8.99)">Obtener Acceso</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <div class="container">
+            <h2>Soporte</h2>
+            <div class="support-grid">
+                <div class="faq">
+                    <h3>Preguntas Frecuentes</h3>
+                    <details class="faq-item">
+                        <summary>¿Cómo funciona el servicio?</summary>
+                        <p>Proporcionamos acceso seguro a las plataformas de streaming más populares a precios competitivos.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Qué métodos de pago aceptan?</summary>
+                        <p>Aceptamos PayPal, tarjetas de crédito/débito y transferencias bancarias.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Cuánto tarda en activarse mi acceso?</summary>
+                        <p>El acceso se activa inmediatamente después de confirmar el pago.</p>
+                    </details>
+                </div>
+                <div class="contact-form">
+                    <h3>Contáctanos</h3>
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>StreamAccess</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </a>
+                    <a href="#" class="icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2024 StreamAccess. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Formulario de Pago</h2>
+            <form id="paymentForm" onsubmit="handlePaymentSubmit(event)">
+                <div class="form-group">
+                    <label for="cardName">Nombre en la tarjeta</label>
+                    <input type="text" id="cardName" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Número de tarjeta</label>
+                    <input type="text" id="cardNumber" maxlength="19" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Fecha de expiración</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" maxlength="4" required>
+                    </div>
+                </div>
+                <div class="payment-summary">
+                    <p>Plataforma: <span id="selectedPlatform"></span></p>
+                    <p>Total a pagar: $<span id="selectedPrice"></span></p>
+                </div>
+                <button type="submit" class="btn btn-primary">Pagar Ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
