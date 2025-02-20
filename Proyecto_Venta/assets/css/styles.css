@@ -352,4 +352,43 @@ body {
         gap: 1rem;
         text-align: center;
     }
+     .plans-grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .plan-card {
+        padding: 1rem;
+        min-height: 280px;
+    }
+    
+    .plan-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .plan-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .plan-price {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .plan-price span {
+        font-size: 0.8rem;
+    }
+    
+    .plan-features li {
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .plan-card .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
