@@ -151,8 +151,9 @@ body {
 .plan-card {
     background: var(--card-bg);
     border-radius: var(--border-radius);
-    padding: 1.5rem;
+    padding: 3rem;
     transition: transform 0.3s;
+    
 }
 
 .plan-card:hover {
@@ -352,7 +353,7 @@ body {
         gap: 1rem;
         text-align: center;
     }
-     .plans-grid {
+    .plans-grid {
         grid-template-columns: repeat(2, minmax(140px, 1fr));
         gap: 1rem;
         padding: 0 0.5rem;
