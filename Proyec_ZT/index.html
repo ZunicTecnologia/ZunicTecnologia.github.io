@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/stile.css">
+    <link rel="shortcut icon" href="assets/img/icono.png">
     <title>Barbería Estilo Hugo - Tu estilo empieza aquí</title>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Enhanced Navigation -->
     <nav class="nav" id="nav">
-        <ul>
+        <div class="nav-container">
+            <div class="nav-brand">Barbería Estilo Hugo</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Enhanced Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-brand">Barbería Estilo Hugo</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="nav-overlay">
+        <ul class="nav-menu">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#horarios">Horarios</a></li>
             <li><a href="#galeria">Galería</a></li>
         </ul>
-    </nav>
+    </div>
 
     <!-- Header -->
     <header class="header" id="inicio">
@@ -71,15 +108,15 @@
         <h2 class="section-title fade-in">Galería</h2>
         <div class="gallery-grid">
             <div class="gallery-item fade-in">
-                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corte moderno">
+                <img src="assets/img/corte.jpg" alt="Corte moderno">
                 <div class="gallery-overlay">Cortes Modernos</div>
             </div>
             <div class="gallery-item fade-in">
-                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Arreglo de barba">
+                <img src="assets/img/barba.jpg" alt="Arreglo de barba">
                 <div class="gallery-overlay">Arreglo de Barba</div>
             </div>
             <div class="gallery-item fade-in">
-                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ambiente de la barbería">
+                <img src="assets/img/ambiente.jpg" alt="Ambiente de la barbería">
                 <div class="gallery-overlay">Nuestro Ambiente</div>
             </div>
         </div>
@@ -94,7 +131,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Página de ejemplo – hecha por Hugo Zuna</p>
+        <p>Página de ejemplo – hecha por Hugo Zuna | Servicio web económico para emprendedores</p>
     </footer>
 
     <script src="assets/script/script.js"></script>
