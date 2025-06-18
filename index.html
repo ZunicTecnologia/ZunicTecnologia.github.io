@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zunic Tecnología - Espacios Web Accesibles</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/icono_inicio.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <img src="assets/img/icono_inicio.png" alt="Zunic Logo" class="logo">
+                <span class="brand-name">Zunic Tecnología</span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ejemplos">Ejemplos</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#inicio" onclick="closeMobileMenu()">Inicio</a></li>
+                <li><a href="#servicios" onclick="closeMobileMenu()">Servicios</a></li>
+                <li><a href="#ejemplos" onclick="closeMobileMenu()">Ejemplos</a></li>
+                <li><a href="#precios" onclick="closeMobileMenu()">Precios</a></li>
+                <li><a href="#faq" onclick="closeMobileMenu()">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" onclick="closeMobileMenu()">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Espacios Web Accesibles</h1>
+                <p>Creamos y gestionamos tu presencia digital sin complicaciones. Sin dominio, sin hosting, sin
+                    problemas.</p>
+                <a href="#contacto" class="cta-button">Solicitar Demo Gratuita</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">¿Quiénes Somos?</h2>
+                <div class="about-content fade-in-up">
+                    <p>Somos <strong>Zunic Tecnología</strong>, un proyecto que crea espacios web accesibles para
+                        emprendedores, negocios y estudiantes. Sin dominio, sin hosting, sin complicaciones.</p>
+                    <p>Nos especializamos en brindar soluciones web simples y efectivas que se adaptan a tus necesidades
+                        específicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="section" style="background: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title">¿Qué Ofrecemos?</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Espacio Web Alojado</h3>
+                        <p>Creamos tu espacio web alojado por nosotros en GitHub Pages. Rápido, seguro y confiable.</p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>Gestión Completa</h3>
+                        <p>Vos mandás textos, fotos, colores y datos de contacto. Nosotros lo publicamos y actualizamos.
+                        </p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3>Acceso por Enlace o QR</h3>
+                        <p>Se accede por enlace directo o código QR. No aparece en Google, es tu espacio privado.</p>
+                    </div>
+
+                    <div class="service-card fade-in-up">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Mantenimiento Incluido</h3>
+                        <p>El cliente NO edita la página directamente, nosotros hacemos todos los cambios necesarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="ejemplos" class="section">
+            <div class="container">
+                <h2 class="section-title">Galería de Ejemplos</h2>
+                <div class="gallery-grid">
+                    <div class="demo-card fade-in-up">
+                        <img src="assets/img/barberia .png"
+                            alt="Demo Restaurante" class="demo-image">
+                        <div class="demo-content">
+                            <h3>Barbería estilo Hugo</h3>
+                            <p>Página de presentación para una barbería local con estilo moderno, horarios y contacto
+                                directo por WhatsApp.</p>
+                            <button class="demo-button" onclick="window.open('Proyec_Zunic/Proyec_ZT/index.html', '_blank')">Ver Demo</button>
+                        </div>
+                    </div>
+
+                    <div class="demo-card fade-in-up">
+                        <img src="assets/img/ZT Tutoria.png" alt="Demo Tienda"
+                            class="demo-image">
+                        <div class="demo-content">
+                            <h3>ZT Tutorías</h3>
+                            <p>Espacio web para ofrecer clases particulares o tutorías universitarias, incluyendo
+                                materias, horarios y contacto.</p>
+                            <button class="demo-button" onclick="window.open('Proyec_Zunic/Proyec_TD/index.html', '_blank')">Ver Demo</button>
+                        </div>
+                    </div>
+
+                    <div class="demo-card fade-in-up">
+                        <img src="Proyec_Zunic/Proyecto-libro/assets/img/icono_shumil.png"
+                            alt="Demo Servicios" class="demo-image">
+                        <div class="demo-content">
+                            <h3>Proyecto Libro</h3>
+                            <p>Página para mostrar, promocionar o compartir un libro personal, capítulos, enlaces de
+                                descarga o compra.</p>
+                            <button class="demo-button" onclick="window.open('Proyec_Zunic/Proyecto-libro/Shumil_con_lobo.html', '_blank')">Ver Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="precios" class="section" style="background: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title">Planes y Precios</h2>
+                <div class="pricing-table fade-in-up">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>Qué incluye</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Plan de Prueba</strong></td>
+                                <td>Página demo gratuita con tus datos básicos</td>
+                                <td class="price">Bs. 0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Plan Básico</strong></td>
+                                <td>Página fija, QR, contacto WhatsApp</td>
+                                <td class="price">Bs. 50</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Plan Estándar</strong></td>
+                                <td>Todo lo anterior + galería + colores personalizados</td>
+                                <td class="price">Bs. 80</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Plan Profesional</strong></td>
+                                <td>Catálogo, formulario de pedido, estilo visual avanzado</td>
+                                <td class="price">Bs. 100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Puedo modificar la página yo mismo?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, pero podés pedirme los cambios que necesites. Nosotros nos encargamos de todas las
+                                actualizaciones para mantener la calidad y funcionamiento óptimo de tu espacio web.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Aparece en Google?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, se accede por enlace directo o QR. Esto te da control total sobre quién puede ver tu
+                                contenido y cuándo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Funciona en celulares?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, es 100% responsive. Tu espacio web se ve y funciona perfectamente en todos los
+                                dispositivos: celulares, tablets y computadoras.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Pago mensual?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, el pago es único. Una vez que pagás tu plan, tu espacio web queda activo sin costos
+                                adicionales mensuales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <p><strong>Pedí tu demo gratuita sin compromiso.</strong></p>
+                <p>Contactanos por WhatsApp y te crearemos una página de prueba con tus datos para que veas cómo
+                    quedaría tu espacio web.</p>
+                <a href="#contacto" class="cta-button">Solicitar Demo Ahora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/59175607448?text=Hola! Me interesa conocer más sobre los espacios web de Zunic Tecnología"
+        class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Zunic Tecnología. Todos los derechos reservados.</p>
+            <p>Creando espacios web accesibles para todos.</p>
+        </div>
+    </footer>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
