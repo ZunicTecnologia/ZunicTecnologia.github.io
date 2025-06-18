@@ -1,44 +1,67 @@
-# Creación de Página Web con GitHub Pages
+# 🌐 Zunic Tecnología - Espacios web accesibles
 
-## Descripción
+Bienvenido a **Zunic Tecnología**, un proyecto que busca dar presencia en internet a pequeños negocios, emprendimientos y estudiantes, sin necesidad de pagar hosting ni dominio.
 
-Ofrecemos la creación de páginas web utilizando **GitHub Pages**, una plataforma gratuita que te permite publicar tu sitio web sin necesidad de pagar por hosting ni dominio. Nuestro servicio está enfocado en la creación de páginas web simples y funcionales, gestionadas a través de código.
-
-## Lo que Ofrecemos
-
-- **Creación de Página Web**: Creamos tu página web personalizada utilizando GitHub Pages, sin costos adicionales por hosting ni dominio.
-- **Modificaciones**: Cualquier cambio en el contenido o diseño de tu página web será gestionado a través de código, y podrás solicitar modificaciones mensuales.
-
-## Importante a Tener en Cuenta
-
-- **No es una Página Autoadministrable**: No podrás realizar cambios directamente en el contenido de la página. Cualquier modificación o actualización deberá ser solicitada y realizada por nosotros a través de código.
-- **Sin Base de Datos**: Las páginas que creamos no cuentan con base de datos, lo que implica algunas limitaciones como:
-  - No se podrá gestionar contenido dinámico (por ejemplo, agregar publicaciones desde un panel de administración).
-  - No se podrá almacenar información de usuarios (como registros, inicio de sesión, etc.).
-  - No se podrán implementar carritos de compra o sistemas de ventas complejos.
-
-## Precios
-
-- **Creación de la Página Web**: 200 Bs (pago único). Este es el costo por la creación y publicación de tu página web.
-- **Modificaciones Mensuales**: 100 Bs por mes. Este precio cubre todas las modificaciones que necesites durante el mes.
-
-## Proceso
-
-1. **Contacto**: Contáctame a través de **WhatsApp** al número **60812495**.
-2. **Detalles del Proyecto**: Discutiremos tus necesidades y preferencias para el diseño de tu página web.
-3. **Creación de la Página**: Utilizando GitHub Pages y código, crearé y publicaré tu página web.
-4. **Modificaciones**: Si deseas cambios después de la creación, puedes contratar el servicio mensual para cubrir todas las modificaciones.
-
-## ¿Por qué Elegirnos?
-
-- **Sin costos de hosting ni dominio**: Usamos GitHub Pages para que tu página esté online sin pagar por estos servicios.
-- **Servicio Personalizado**: Adaptamos cada página web a tus necesidades y requerimientos.
-- **Fácil de contactar**: Estoy disponible para resolver dudas o realizar modificaciones a través de WhatsApp.
-
-## Contacto
-
-Si estás interesado en mis servicios o si tienes alguna pregunta, no dudes en **contactarme por WhatsApp** al número **60812495**.
+Creamos **espacios web simples y funcionales**, visibles por QR o enlace directo. No es necesario tener conocimientos técnicos: vos nos enviás tu contenido y nosotros nos encargamos del resto.
 
 ---
 
-¡Estamos aquí para ayudarte a tener tu presencia online sin complicaciones!
+## 🚀 ¿Qué ofrecemos?
+
+- Páginas estáticas alojadas en GitHub Pages.
+- Acceso mediante enlace personalizado o QR.
+- Diseño adaptable para celular y PC.
+- Actualización bajo solicitud del cliente.
+- Diferentes planes según tus necesidades.
+
+---
+
+## 🧰 Planes disponibles
+
+| Plan                | Incluye                                                   | Precio (Bs.) |
+|---------------------|------------------------------------------------------------|--------------|
+| **Plan de Prueba**  | Demo gratuita con tus datos básicos                        | 0            |
+| **Plan Básico**     | Página fija + contacto + QR                                | 50           |
+| **Plan Estándar**   | Página + galería de fotos + colores personalizados         | 80           |
+| **Plan Profesional**| Todo lo anterior + catálogo + formulario + estilo avanzado | 100          |
+
+---
+
+## 📦 Ejemplos de páginas
+
+- 💈 [Barbería estilo Hugo](https://zunictecnologia.github.io/Proyec_ZT/index.html)
+- 🎓 [ZT Tutorías](https://zunictecnologia.github.io/Proyec_TD/index.html)
+- 📘 Proyecto Libro (próximamente)
+
+---
+
+## ❓ Preguntas frecuentes
+
+**¿Puedo editar mi página?**  
+No directamente. Nosotros gestionamos los cambios por vos.
+
+**¿Aparece en Google?**  
+No. La página se accede por enlace directo o QR.
+
+**¿Se ve bien en el celular?**  
+Sí, todas nuestras páginas son responsive.
+
+**¿Tiene costos mensuales?**  
+No. Solo pagás una vez según el plan elegido.
+
+---
+
+## 📞 Contacto
+
+> **WhatsApp**: [+591 75607448](https://wa.me/59175607448)  
+> **Correo**: *[opcional]*  
+> **Página principal**: [ZunicTecnología](https://zunictecnologia.github.io/)
+
+---
+
+## ⚠️ Nota
+
+Este repositorio está pensado para mostrar ejemplos y organizar el contenido de **Zunic Tecnología**.  
+Los archivos aquí presentes **no son editables por clientes** directamente.
+
+
